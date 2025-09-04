@@ -16,5 +16,8 @@ Route::get('think', function () {
 Route::get('hello/:name', 'index/hello');
 
 // 计划模块
-Route::rule('plan/update_api_group_games$', 'plan.UpdateApiGroupGames/update_api_group_games');
- 
+Route::rule('movie/type_list$', 'movie.TypeList/get_type_list'); // 获取电影类型列表
+Route::rule('movie/movie_list$', 'movie.MovieList/get_movie_list'); // 获取电影列表
+Route::rule('movie/movie_info$', 'movie.MovieInfo/get_movie_info'); // 获取电影详情
+Route::rule('movie/movie_search$', 'movie.MovieSearch/get_movie_search'); // 搜索电影
+Route::rule('movie/movie_rank$', 'movie.MovieRank/get_movie_rank'); // 获取电影排行榜
